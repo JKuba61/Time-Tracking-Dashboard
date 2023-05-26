@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="card card--user">
+      <div class="card user">
+        <div class="user__img">
+          <img src="./images/image-jeremy.png" alt="Jeremy Robson">
+        </div>
+        <div class="user__name">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="reportSettigs">
+        <button data-timeframe="daily" class="settingBtn btn">Daily</button>
+        <button data-timeframe="weekly" class="settingBtn active btn">Weekly</button>
+        <button data-timeframe="monthly" class="settingBtn btn">Monthly</button>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Work</h2>
+          <button data-type="Work" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Play</h2>
+          <button data-type="Play" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Study</h2>
+          <button data-type="Study" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Exercise</h2>
+          <button data-type="Exercise" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Social</h2>
+          <button data-type="Social" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card--timer">
+      <div class="card--inner">
+        <div class="data data--type">
+          <h2 class="data__name">Self Care</h2>
+          <button data-type="Self Care" class="data__btn btn">...</button>
+        </div>
+        <div class="data data--time">
+          <h3 class="data__hours">n/a</h3>
+          <p class="data__previous">n/a</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <dialog class="modal">
+    <div class="modal__card card card--inner">
+      <div class="modal__nav">
+        <h2 class="modal__title">Work</h2>
+        <button class="modal__closeBtn btn">Close</button>
+      </div>
+      <div class="modal__current">
+        <h3 class="modal__time">Current</h3>
+        <div class="modal__time--data">
+          <p>Day: <span class="modal__current__day">12hrs</span></p>
+          <p>Week: <span class="modal__current__week">24hrs</span></p>
+          <p>Month: <span class="modal__current__month">36hrs</span></p>
+        </div>
+      </div>
+      <div class="modal__previous">
+        <h3 class="modal__time">Previous</h3>
+        <div class="modal__time--data">
+          <p>Day: <span class="modal__previous__day">12hrs</span></p>
+          <p>Week: <span class="modal__previous__week">24hrs</span></p>
+          <p>Month: <span class="modal__previous__month">36hrs</span></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+
+</html>
